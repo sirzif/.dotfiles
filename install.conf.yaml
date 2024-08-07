@@ -2,7 +2,7 @@
     link:
       relink: true
 
-- clean: ['~']
+- clean: ['~', '~/.config']
 
 - link:
     ~/.tmux.conf: tmux/.tmux.conf
@@ -11,14 +11,16 @@
       path: zsh/.zshrc
     ~/.zsh_profile: zsh/.zsh_profile
     ~/.gitconfig: git/.gitconfig
-    ~/.local/bin/tmux-sessionizer: bin/.local/scripts/tmux-sessionizer
-    ~/.config/nvim: nvim
+    ~/.local/bin/tmux-sessionizer:
+      create: true
+      path: bin/.local/scripts/tmux-sessionizer
+    ~/.config/nvim:
+      create: true
+      path: nvim
 
 - create:
     - ~/work/projects
     - ~/personal/projects
-    - ~/.local/bin
-    - ~/.config/
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
