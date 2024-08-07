@@ -6,7 +6,9 @@
 
 - link:
     ~/.tmux.conf: tmux/.tmux.conf
-    ~/.zshrc: zsh/.zshrc
+    ~/.zshrc:
+      force: true
+      path: zsh/.zshrc
     ~/.zsh_profile: zsh/.zsh_profile
     ~/.gitconfig: git/.gitconfig
     ~/.local/bin/tmux-sessionizer: bin/.local/scripts/tmux-sessionizer
@@ -20,3 +22,7 @@
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
+  - [sudo pacman -S $(< packages.list)]
+  - [curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh]
+  - [curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.0/install.sh | bash]
+  - [nvm install --lts]

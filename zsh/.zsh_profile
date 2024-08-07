@@ -1,6 +1,4 @@
 alias vim="nvim"
-VIM="nvim"
-export GIT_EDITOR=$VIM
 
 bindkey -s ^f "tmux-sessionizer\n"
 
