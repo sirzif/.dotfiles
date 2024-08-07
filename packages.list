@@ -1,3 +1,4 @@
+firefox
 git
 openssh
 ripgrep
@@ -9,3 +10,4 @@ go
 base-devel
 zsh
 neovim
+nvm
