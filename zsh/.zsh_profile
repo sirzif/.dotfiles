@@ -1,4 +1,19 @@
-PERSONAL=~/.config/personal
-source $PERSONAL/env
+alias vim="nvim"
+VIM="nvim"
+export GIT_EDITOR=$VIM
+
+bindkey -s ^f "tmux-sessionizer\n"
+
+addToPath() {
+    if [[ "$PATH" != *"$1"* ]]; then
+        export PATH=$PATH:$1
+    fi
+}
+
+addToPathFront() {
+    if [[ "$PATH" != *"$1"* ]]; then
+        export PATH=$1:$PATH
+    fi
+}
 
 add_to_path_front $HOME/.local/bin
