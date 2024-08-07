@@ -2,7 +2,7 @@
     link:
       relink: true
 
-# - clean: ['~']
+- clean: ['~']
 
 - link:
     ~/.tmux.conf: tmux/.tmux.conf
@@ -15,7 +15,7 @@
 - create:
     - ~/work/projects
     - ~/personal/projects
-    - ~/.local/
+    - ~/.local/bin
     - ~/.config/
 
 - shell:
