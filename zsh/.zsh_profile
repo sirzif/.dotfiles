@@ -1,0 +1,4 @@
+PERSONAL=~/.config/personal
+source $PERSONAL/env
+
+add_to_path_front $HOME/.local/bin
