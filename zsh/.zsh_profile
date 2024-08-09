@@ -2,6 +2,8 @@ alias vim="nvim"
 
 bindkey -s ^f "tmux-sessionizer\n"
 
+export GOPATH=$HOME/.local/go
+
 addToPath() {
     if [[ "$PATH" != *"$1"* ]]; then
         export PATH=$PATH:$1
@@ -15,3 +17,6 @@ addToPathFront() {
 }
 
 addToPathFront $HOME/.local/bin
+addToPathFront $HOME/.local/go/bin
+addToPathFront /usr/local/go/bin
+
