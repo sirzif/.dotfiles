@@ -1,9 +1,10 @@
 ripgrep
 fzf
 tldr
-xclip
 tmux
 go
 zsh
 neovim
-alacritty
+grim
+slurp
+
