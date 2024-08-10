@@ -15,13 +15,13 @@ window {
 }
 
 #entry:selected {
-    background: none;
+    background: rgba(252, 95, 114, 1);
 }
 
 #text:selected {
     font-weight: bold;
     background: none;
-    color: white;
+    color: rgba(17, 17, 29, 1);
 }
 
 #input {
