@@ -17,6 +17,10 @@
     ~/.config/nvim:
       create: true
       path: nvim
+    ~/.config/hypr: hypr
+    ~/.config/waybar: waybar
+    ~/.config/wofi: wofi
+    ~/.config/alacritty: alacritty
 
 - create:
     - ~/work/projects
