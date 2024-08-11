@@ -21,6 +21,7 @@
     ~/.config/waybar: waybar
     ~/.config/wofi: wofi
     ~/.config/alacritty: alacritty
+    ~/.config/wlogout: wlogout
 
 - create:
     - ~/work/projects
