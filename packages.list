@@ -11,8 +11,6 @@ grim
 htop
 hyprland
 hyprpaper
-linux
-linux-firmware
 ly
 neovim
 networkmanager
@@ -22,6 +20,7 @@ pipewire-alsa
 pipewire-audio
 pipewire-pulse
 power-profiles-daemon
+python-gobject
 ripgrep
 slurp
 tldr
@@ -35,3 +34,5 @@ wofi
 xclip
 zsh
 man-db
+ranger
+qt6ct

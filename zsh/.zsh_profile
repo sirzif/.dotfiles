@@ -2,6 +2,9 @@ alias vim="nvim"
 
 bindkey -s ^f "tmux-sessionizer\n"
 
+export QT_QPA_PLATFORM=wayland
+export QT_QPA_PLATFORMTHEME=qt6ct
+
 export GOPATH=$HOME/.local/go
 
 addToPath() {

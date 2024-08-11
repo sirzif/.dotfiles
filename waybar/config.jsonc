@@ -117,7 +117,8 @@
         "tooltip": false
     },
     "memory": {
-        "format": "{}% "
+        "format": "{}% ",
+        "on-click": "exec hyprctl dispatch exec '[float;size 50%]alacritty -e btop'"
     },
     "temperature": {
         // "thermal-zone": 2,
