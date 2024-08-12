@@ -13,12 +13,12 @@ hyprland
 hyprpaper
 ly
 neovim
-networkmanager
 nwg-look
 pipewire
 pipewire-alsa
 pipewire-audio
 pipewire-pulse
+pavucontrol
 power-profiles-daemon
 python-gobject
 ripgrep
