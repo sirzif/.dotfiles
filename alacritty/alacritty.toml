@@ -3,5 +3,6 @@ padding = { x =  5, y = 5 }
 opacity = 0.8
 
 [font]
-size = 14
+size = 12
+normal = {family = "JetBrains Mono Medium"}
 
