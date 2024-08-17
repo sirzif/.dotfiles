@@ -17,11 +17,24 @@
     ~/.config/nvim:
       create: true
       path: nvim
-    ~/.config/hypr: hypr
-    ~/.config/waybar: waybar
-    ~/.config/wofi: wofi
-    ~/.config/alacritty: alacritty
-    ~/.config/wlogout: wlogout
+    ~/.config/hypr:
+      force: true
+      path: hypr
+    ~/.config/waybar:
+      force: true
+      path: waybar
+    ~/.config/wofi:
+      force: true
+      path: wofi
+    ~/.config/alacritty:
+      force: true
+      path: alacritty
+    ~/.config/wlogout:
+      force: true
+      path: wlogout
+    ~/.config/Kvantum:
+      force: true
+      path: Kvantum
 
 - create:
     - ~/work/projects

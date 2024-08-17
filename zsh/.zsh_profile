@@ -3,7 +3,7 @@ alias vim="nvim"
 bindkey -s ^f "tmux-sessionizer\n"
 
 # export QT_QPA_PLATFORM=wayland
-export QT_QPA_PLATFORMTHEME=qt6ct
+export QT_QPA_PLATFORMTHEME=qt5ct
 export XDG_MENU_PREFIX=arch- kbuildsycoca6
 
 export GOPATH=$HOME/.local/go
