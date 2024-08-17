@@ -18,6 +18,7 @@ hyprpaper
 inter-font
 man-db
 neovim
+nmap
 nwg-look
 obs-studio
 openssh
@@ -32,8 +33,11 @@ python-gobject
 qt6ct
 ranger
 ripgrep
+rpi-imager
+rustscan
 sddm
 slurp
+sudo
 swaync
 tldr
 tmux
