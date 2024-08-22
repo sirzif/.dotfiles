@@ -23,9 +23,9 @@
     ~/.config/waybar:
       force: true
       path: waybar
-    ~/.config/wofi:
+    ~/.config/rofi:
       force: true
-      path: wofi
+      path: rofi
     ~/.config/alacritty:
       force: true
       path: alacritty
@@ -35,6 +35,9 @@
     ~/.config/Kvantum:
       force: true
       path: Kvantum
+    ~/.config/gtk-3.0:
+      force: true
+      path: gtk-3.0
 
 - create:
     - ~/work/projects

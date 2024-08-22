@@ -1,5 +1,5 @@
 alias vim="nvim"
-
+alias changelang="hyprctl switchxkblayout at-translated-set-2-keyboard next"
 bindkey -s ^f "tmux-sessionizer\n"
 
 # export QT_QPA_PLATFORM=wayland

@@ -27,7 +27,7 @@
         //"temperature",
         "backlight",
         //"keyboard-state",
-        //"sway/language",
+        //"hyprland/language",
         "battery",
         //"battery#bat2",
         //"clock",
@@ -42,7 +42,7 @@
          "format": "{icon}",
          "format-icons": {
              "1": "",
-             "2": "󰈹",
+             "2": "",
              "3": "",
              "4": "",
              "5": "",
@@ -52,6 +52,9 @@
              "default": ""
          }
      },
+    "hyprland/language": {
+        "on-click": "hyprctl switchxkblayout at-translated-set-2-keyboard next"
+    },
     "keyboard-state": {
         "numlock": true,
         "capslock": true,
