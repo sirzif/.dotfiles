@@ -104,3 +104,11 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 source ~/.zsh_profile
 source /usr/share/nvm/init-nvm.sh
+. "/home/martis/.deno/env"
+
+# bun completions
+[ -s "/home/martis/.bun/_bun" ] && source "/home/martis/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
