@@ -1,6 +1,5 @@
 alias vim="nvim"
-alias changelang="hyprctl switchxkblayout at-translated-set-2-keyboard next"
-bindkey -s ^f "tmux-sessionizer\n"
+bindkey -s ^f ". dirfinder\n"
 
 export XDG_MENU_PREFIX=arch- kbuildsycoca6
 

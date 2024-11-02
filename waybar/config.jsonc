@@ -19,7 +19,7 @@
     "modules-right": [
         //"mpd",
         //"idle_inhibitor",
-        "pulseaudio",
+        "wireplumber",
         "network",
         //"power-profiles-daemon",
         "cpu",
@@ -27,7 +27,7 @@
         //"temperature",
         "backlight",
         //"keyboard-state",
-        //"hyprland/language",
+        "hyprland/language",
         "battery",
         //"battery#bat2",
         //"clock",
@@ -53,6 +53,7 @@
          }
      },
     "hyprland/language": {
+        "format": " {shortDescription}",
         "on-click": "hyprctl switchxkblayout at-translated-set-2-keyboard next"
     },
     "keyboard-state": {
@@ -176,12 +177,10 @@
         "on-click": "hyprctl dispatch exec '[float;size 70%]alacritty -e impala'"
 
     },
-    "pulseaudio": {
+    "wireplumber": {
         // "scroll-step": 1, // %, can be a float
-        "format": "{volume}% {icon} {format_source}",
-        "format-bluetooth": "{volume}% {icon} {format_source}",
-        "format-bluetooth-muted": " {icon} {format_source}",
-        "format-muted": " {format_source}",
+        "format": "{volume}% {icon}",
+        "format-muted": "",
         "format-source": "{volume}% ",
         "format-source-muted": "",
         "format-icons": {
