@@ -30,19 +30,19 @@
          "warp-on-scroll": false,
          "format": "{icon}",
          "format-icons": {
-             "1": "",
-             "2": "",
-             "3": "",
-             "4": "",
-             "5": "",
-             "urgent": "",
-             "focused": "",
-             //"active": "",
-             "default": ""
+             "1": "\uf120",
+             "2": "\ue007",
+             "3": "\uf392",
+             "4": "\uf1bc",
+             "5": "\uf075",
+             "urgent": "\uf06a2",
+             "focused": "\uf111",
+             //"active": "\uf192",
+             "default": "\uf111"
          }
      },
     "hyprland/language": {
-        "format": " {shortDescription}",
+        "format": "\uf1ab {shortDescription}",
         "on-click": "hyprctl switchxkblayout at-translated-set-2-keyboard next"
     },
     "tray": {
@@ -55,11 +55,11 @@
         "format-alt": "{:%Y-%m-%d}"
     },
     "cpu": {
-        "format": "{usage}% ",
+        "format": "{usage}% \uf2db",
         "tooltip": false
     },
     "memory": {
-        "format": "{}% ",
+        "format": "{}% \uf538",
         "on-click": "hyprctl dispatch exec '[float;size 70%]alacritty -e btop'"
     },
     "backlight": {
@@ -75,42 +75,42 @@
         },
         "format": "{capacity}% {icon}",
         "format-full": "{capacity}% {icon}",
-        "format-charging": "{capacity}% 󰂄",
-        "format-plugged": "{capacity}% ",
+        "format-charging": "{capacity}% \ue55b",
+        "format-plugged": "{capacity}% \uf1e6",
         "format-alt": "{time} {icon}",
          //"format-good": "", // An empty format will hide the module
          //"format-full": "",
-        "format-icons": ["", "", "", "", ""]
+        "format-icons": ["\uf244", "f243", "\uf242", "\uf241", "\uf240"]
     },
     "network": {
         // "interface": "wlp2*", // (Optional) To force the use of this interface
-        "format-wifi": "{essid} ({signalStrength}%) ",
-        "format-ethernet": "{ipaddr}/{cidr} ",
-        "tooltip-format": "{ifname} via {gwaddr} ",
-        "format-linked": "{ifname} (No IP) ",
-        "format-disconnected": "Disconnected ⚠",
+        "format-wifi": "{essid} ({signalStrength}%) \uf1eb",
+        "format-ethernet": "{ipaddr}/{cidr} \uf6ff",
+        "tooltip-format": "{ifname} via {gwaddr} \uf012",
+        "format-linked": "{ifname} (No IP) \uf071",
+        "format-disconnected": "Disconnected \uf071",
         "on-click": "hyprctl dispatch exec '[float;size 70%]alacritty -e impala'"
 
     },
     "wireplumber": {
         // "scroll-step": 1, // %, can be a float
         "format": "{volume}% {icon}",
-        "format-muted": "",
-        "format-source": "{volume}% ",
-        "format-source-muted": "",
+        "format-muted": "\uf6a9",
+        "format-source": "{volume}% \uf130",
+        "format-source-muted": "\uf131",
         "format-icons": {
-            "headphone": "",
-            "hands-free": "",
-            "headset": "",
-            "phone": "",
-            "portable": "",
-            "car": "",
-            "default": ["", "", ""]
+            "headphone": "\uf025",
+            "hands-free": "\uf025",
+            "headset": "\uf590",
+            "phone": "\uf095",
+            "portable": "\uf095",
+            "car": "\uf1b9",
+            "default": ["\uf026", "\uf027", "\uf028"]
         },
         "on-click": "hyprctl dispatch exec '[float;size 50%]pavucontrol'"
     },
     "custom/power": {
-        "format" : "⏻",
+        "format" : "\uf011",
 		"tooltip": false,
         "on-click": "wlogout"
     }

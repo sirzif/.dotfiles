@@ -1,6 +1,6 @@
 alias vim="nvim"
 alias lf="lfub"
-bindkey -s ^f ". dirfinder\n"
+bindkey -s ^f "tmux-sessionizer\n"
 
 export XDG_MENU_PREFIX=arch- kbuildsycoca6
 

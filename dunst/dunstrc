@@ -8,7 +8,7 @@
     # Set {width}x{height} and {x_pos}+{y_pos}
     width = 360
     # height = 180
-    offset = 10x30
+    offset = 15x30
     # Show number of hidden notifications
     indicate_hidden = yes
     # Shrink window if smaller than width
@@ -35,7 +35,7 @@
     ### Text ###
 
     # Set font of notifications
-    font = Iosevka 10
+    font = Inter 12
     # Spacing between lines
     line_height = 0
     # Markup parsing

@@ -4,8 +4,12 @@ opacity = 0.8
 
 [font]
 size = 14
-offset = {x = 1, y = 0}
-normal = {family = "JetBrains Mono Medium"}
+normal = {family = "Cascadia Code"}
+
+[terminal.shell]
+program = "tmux"
+args = ["new-session", "-A", "-s", "main"]
+
 # Colors section of "Alacritty - TOML configuration file format"
 # https://github.com/alacritty/alacritty/blob/master/extra/man/alacritty.5.scd#colors
 
