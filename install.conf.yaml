@@ -11,9 +11,6 @@
       path: zsh/.zshrc
     ~/.zsh_profile: zsh/.zsh_profile
     ~/.gitconfig: git/.gitconfig
-    ~/.local/bin/tmux-sessionizer:
-      create: true
-      path: bin/.local/scripts/tmux-sessionizer
     ~/.config/nvim:
       create: true
       path: nvim
@@ -44,3 +41,4 @@
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
+  - [cp -a scripts/. ~/.local/bin/, Copying scripts]

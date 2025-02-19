@@ -17,14 +17,14 @@ window#waybar {
     border-top: none;
 }
 
-.modules-center {
-    margin: 0;
-    background-color: rgba(17, 17, 29, 1);
-    border-bottom-right-radius: 15px;
-    border-bottom-left-radius: 15px;
-    border: 1px solid rgba(252, 95, 114, 1);
-    border-top: none;
-}
+/*.modules-center {*/
+/*    margin: 0;*/
+/*    background-color: rgba(17, 17, 29, 1);*/
+/*    border-bottom-right-radius: 15px;*/
+/*    border-bottom-left-radius: 15px;*/
+/*    border: 1px solid rgba(252, 95, 114, 1);*/
+/*    border-top: none;*/
+/*}*/
 
 .modules-right {
     margin-right: 5px;

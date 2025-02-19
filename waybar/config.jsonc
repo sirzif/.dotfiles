@@ -1,17 +1,17 @@
 // -*- mode: jsonc -*-
 {
-     "layer": "top", // Waybar at top layer
-     //"position": "bottom", // Waybar position (top|bottom|left|right)
+    "layer": "top", // Waybar at top layer
+    //"position": "bottom", // Waybar position (top|bottom|left|right)
     "height": 30, // Waybar height (to be removed for auto height)
-     //"width": 1280, // Waybar width
+    //"width": 1280, // Waybar width
     "spacing": 0, // Gaps between modules (4px)
     // Choose the order of the modules
     "modules-left": [
         "hyprland/workspaces"
     ],
-    "modules-center": [
-        "clock"
-    ],
+    //"modules-center": [
+    //    //"clock"
+    //],
     "modules-right": [
         "wireplumber",
         "network",
@@ -21,26 +21,27 @@
         "hyprland/language",
         "battery",
         "tray",
+        "clock",
         "custom/power"
     ],
     // Modules configuration
-     "hyprland/workspaces": {
-         "disable-scroll": true,
-         "all-outputs": true,
-         "warp-on-scroll": false,
-         "format": "{icon}",
-         "format-icons": {
-             "1": "\uf120",
-             "2": "\ue007",
-             "3": "\uf392",
-             "4": "\uf1bc",
-             "5": "\uf075",
-             "urgent": "\uf06a2",
-             "focused": "\uf111",
-             //"active": "\uf192",
-             "default": "\uf111"
-         }
-     },
+    "hyprland/workspaces": {
+        "disable-scroll": true,
+        "all-outputs": true,
+        "warp-on-scroll": false,
+        "format": "{icon}",
+        "format-icons": {
+            "1": "\uf120",
+            "2": "\ue007",
+            "3": "\uf392",
+            "4": "\uf1bc",
+            "5": "\uf075",
+            "urgent": "\uf06a2",
+            "focused": "\uf111",
+            //"active": "\uf192",
+            "default": "\uf111"
+        }
+    },
     "hyprland/language": {
         "format": "\uf1ab {shortDescription}",
         "on-click": "hyprctl switchxkblayout at-translated-set-2-keyboard next"
@@ -50,8 +51,20 @@
         "spacing": 10
     },
     "clock": {
-         "timezone": "Europe/Vilnius",
-        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+        "timezone": "Europe/Vilnius",
+        "tooltip-format": "<big>{:%Y %B %d}</big>\n<tt><small>{calendar}</small></tt>",
+        "calendar": {
+            "mode": "month",
+            "mode-mon-col": 3,
+            "on-scroll": 1,
+            "on-click-right": "mode",
+            "format": {
+                "months": "<span color='#ffead3'><b>{}</b></span>",
+                "days": "<span color='#ecc6d9'><b>{}</b></span>",
+                "weekdays": "<span color='#ffcc66'><b>{}</b></span>",
+                "today": "<span color='#ff6699'><b><u>{}</u></b></span>"
+            }
+        },
         "format-alt": "{:%Y-%m-%d}"
     },
     "cpu": {
@@ -65,11 +78,21 @@
     "backlight": {
         // "device": "acpi_video1",
         "format": "{percent}% {icon}",
-        "format-icons": ["", "", "", "", "", "", "", "", ""]
+        "format-icons": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ]
     },
     "battery": {
         "states": {
-             //"good": 95,
+            //"good": 95,
             "warning": 30,
             "critical": 15
         },
@@ -78,9 +101,15 @@
         "format-charging": "{capacity}% \ue55b",
         "format-plugged": "{capacity}% \uf1e6",
         "format-alt": "{time} {icon}",
-         //"format-good": "", // An empty format will hide the module
-         //"format-full": "",
-        "format-icons": ["\uf244", "f243", "\uf242", "\uf241", "\uf240"]
+        //"format-good": "", // An empty format will hide the module
+        //"format-full": "",
+        "format-icons": [
+            "\uf244",
+            "f243",
+            "\uf242",
+            "\uf241",
+            "\uf240"
+        ]
     },
     "network": {
         // "interface": "wlp2*", // (Optional) To force the use of this interface
@@ -90,7 +119,6 @@
         "format-linked": "{ifname} (No IP) \uf071",
         "format-disconnected": "Disconnected \uf071",
         "on-click": "hyprctl dispatch exec '[float;size 70%]alacritty -e impala'"
-
     },
     "wireplumber": {
         // "scroll-step": 1, // %, can be a float
@@ -105,13 +133,17 @@
             "phone": "\uf095",
             "portable": "\uf095",
             "car": "\uf1b9",
-            "default": ["\uf026", "\uf027", "\uf028"]
+            "default": [
+                "\uf026",
+                "\uf027",
+                "\uf028"
+            ]
         },
         "on-click": "hyprctl dispatch exec '[float;size 50%]pavucontrol'"
     },
     "custom/power": {
-        "format" : "\uf011",
-		"tooltip": false,
+        "format": "\uf011",
+        "tooltip": false,
         "on-click": "wlogout"
     }
 }
