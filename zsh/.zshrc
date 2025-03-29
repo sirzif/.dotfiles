@@ -8,7 +8,7 @@ export ZSH="$HOME/.oh-my-zsh"
 # load a random theme each time Oh My Zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="garyblessington"
+# ZSH_THEME="sisyphus"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -70,11 +70,20 @@ ZSH_THEME="garyblessington"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(
+    git
+    zsh-autosuggestions
+    zsh-syntax-highlighting
+)
 
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
+PROMPT='%{$fg[cyan]%}%~%{$fg_bold[blue]%}%{$fg_bold[blue]%}%  $(git_prompt_info)%{$reset_color%}%(?..%F{red} ⏺) %{$reset_color%}%(!.#.%%) '
+
+ZSH_THEME_GIT_PROMPT_PREFIX="%{$fg[blue]%}["
+ZSH_THEME_GIT_PROMPT_SUFFIX="]%{$reset_color%}"
+ZSH_THEME_GIT_PROMPT_CLEAN="%{$fg[blue]%}]"
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
@@ -105,10 +114,3 @@ source $ZSH/oh-my-zsh.sh
 source ~/.zsh_profile
 source /usr/share/nvm/init-nvm.sh
 . "/home/martis/.deno/env"
-
-# bun completions
-[ -s "/home/martis/.bun/_bun" ] && source "/home/martis/.bun/_bun"
-
-# bun
-export BUN_INSTALL="$HOME/.bun"
-export PATH="$BUN_INSTALL/bin:$PATH"
