@@ -74,8 +74,14 @@ plugins=(
     git
     zsh-autosuggestions
     zsh-syntax-highlighting
-    keychain
+    ssh-agent
 )
+
+# ssh-agent settings
+zstyle :omz:plugins:ssh-agent helper keychain
+zstyle :omz:plugins:ssh-agent identities id_ed25519
+zstyle :omz:plugins:ssh-agent lazy yes
+zstyle :omz:plugins:ssh-agent quiet yes
 
 source $ZSH/oh-my-zsh.sh
 
