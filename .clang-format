@@ -4,62 +4,43 @@ BasedOnStyle: LLVM
 
 AccessModifierOffset: -2
 AlignAfterOpenBracket: Align
-AlignConsecutiveMacros: true
+AlignArrayOfStructures: None
 AlignConsecutiveAssignments: true
+AlignConsecutiveBitFields: true
+AlignConsecutiveDeclarations: false
+AlignConsecutiveMacros: true
 AlignEscapedNewlines: Right
-AlignOperands: false
+AlignOperands: Align
 AlignTrailingComments: true
 AllowAllArgumentsOnNextLine: true
-AllowAllConstructorInitializersOnNextLine: true
 AllowAllParametersOfDeclarationOnNextLine: true
-AllowShortBlocksOnASingleLine: true
-AllowShortCaseLabelsOnASingleLine: true
+AllowBreakBeforeNoexceptSpecifier: Never
+AllowShortBlocksOnASingleLine: Never
+AllowShortCaseExpressionOnASingleLine: true
+AllowShortCaseLabelsOnASingleLine: false
+AllowShortCompoundRequirementOnASingleLine: true
+AllowShortEnumsOnASingleLine: false
 AllowShortFunctionsOnASingleLine: Empty
 AllowShortIfStatementsOnASingleLine: Never
-AllowShortLambdasOnASingleLine: All
+AllowShortLambdasOnASingleLine: Empty
 AllowShortLoopsOnASingleLine: false
 AlwaysBreakAfterDefinitionReturnType: None
-AlwaysBreakAfterReturnType: None
 AlwaysBreakBeforeMultilineStrings: false
-AlwaysBreakTemplateDeclarations: Yes
-BreakBeforeBraces: Attach
-BreakBeforeTernaryOperators: false
 BreakConstructorInitializers: AfterColon
-ColumnLimit: 120
+BreakInheritanceList: AfterColon
+ColumnLimit: 100
 CompactNamespaces: false
-ConstructorInitializerAllOnOneLineOrOnePerLine: false
-ExperimentalAutoDetectBinPacking: false
-FixNamespaceComments: false
+ExperimentalAutoDetectBinPacking: true
+FixNamespaceComments: true
 IncludeBlocks: Preserve
 IndentCaseLabels: true
-IndentWidth: 4
+IndentWidth:  4
+NamespaceIndentation: None
 PointerAlignment: Left
-ReflowComments: false
-SortIncludes: false
-SortUsingDeclarations: false
-SpaceAfterCStyleCast: false
-SpaceAfterLogicalNot: false
-SpaceAfterTemplateKeyword: true
-SpaceBeforeCtorInitializerColon: true
-SpaceBeforeInheritanceColon: true
-SpaceBeforeParens: ControlStatements
-SpaceBeforeRangeBasedForLoopColon: true
-SpaceInEmptyParentheses: false
-SpacesBeforeTrailingComments: 1
-SpacesInAngles: false
-SpacesInCStyleCastParentheses: false
+ReflowComments: true
+SortIncludes: true
 SpacesInContainerLiterals: false
-SpacesInParentheses: false
-SpacesInSquareBrackets: false
 Standard: Auto
 TabWidth: 4
 UseTab: Never
-
-AllowShortEnumsOnASingleLine: false
-
-BraceWrapping:
-  AfterEnum: false
-
-AlignConsecutiveDeclarations: AcrossEmptyLines
-
-NamespaceIndentation: All
+...
