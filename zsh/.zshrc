@@ -72,7 +72,7 @@ export ZSH="$HOME/.oh-my-zsh"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
     git
-    zsh-autosuggestions
+    # zsh-autosuggestions
     zsh-syntax-highlighting
     ssh-agent
 )

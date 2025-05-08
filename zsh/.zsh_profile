@@ -21,11 +21,10 @@ addToPathFront() {
 addToPathFront $HOME/.local/bin
 addToPathFront $HOME/.local/go/bin
 addToPathFront /usr/local/go/bin
+# PlatformIO
+addToPath $HOME/.platformio/penv/bin
 
 # lf
 addToPath $HOME/.config/lf
 
-# Lua
-export LUA_PATH='/usr/share/lua/5.4/?.lua;/usr/local/share/lua/5.4/?.lua;/usr/local/share/lua/5.4/?/init.lua;/usr/share/lua/5.4/?/init.lua;/usr/local/lib/lua/5.4/?.lua;/usr/local/lib/lua/5.4/?/init.lua;/usr/lib/lua/5.4/?.lua;/usr/lib/lua/5.4/?/init.lua;./?.lua;./?/init.lua;/home/martis/.luarocks/share/lua/5.4/?.lua;/home/martis/.luarocks/share/lua/5.4/?/init.lua'
-export LUA_CPATH='/usr/local/lib/lua/5.4/?.so;/usr/lib/lua/5.4/?.so;/usr/local/lib/lua/5.4/loadall.so;/usr/lib/lua/5.4/loadall.so;./?.so;/home/martis/.luarocks/lib/lua/5.4/?.so'
-export PATH='/home/martis/.luarocks/bin:/home/martis/.bun/bin:/home/martis/.deno/bin:/usr/local/go/bin:/home/martis/.local/go/bin:/home/martis/.local/bin:/home/martis/.cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl'
+
