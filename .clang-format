@@ -5,7 +5,7 @@ BasedOnStyle: LLVM
 AccessModifierOffset: -4
 AlignAfterOpenBracket: Align
 AlignArrayOfStructures: None
-AlignConsecutiveAssignments: true
+AlignConsecutiveAssignments: false
 AlignConsecutiveBitFields: true
 AlignConsecutiveDeclarations: false
 AlignConsecutiveMacros: true
