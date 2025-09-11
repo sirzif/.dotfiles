@@ -76,13 +76,21 @@ window#waybar {
 #language,
 #mpd {
     /*padding: 5px px;*/
-    margin: 1px 10px 1px 10px;
+    margin: 1px 8px 1px 8px;
     color: rgba(252, 95, 114, 1);
     background: none;
 }
 
 #custom-power {
-    font-size: 16px;
+    /* font-size: 14px; */
+    margin-right: 16px;
+}
+
+#wireplumber {
+    margin-left: 16px;
+}
+#wireplumber.muted {
+    margin-bottom: 2px;
 }
 
 window#waybar.empty #window {
