@@ -92,7 +92,7 @@
     },
     "battery": {
         "states": {
-            //"good": 95,
+            // "good": 65,
             "warning": 30,
             "critical": 15
         },
@@ -113,7 +113,13 @@
     },
     "network": {
         // "interface": "wlp2*", // (Optional) To force the use of this interface
-        "format-wifi": "{essid} ({signalStrength}%) \uf1eb",
+        // "format-wifi": "{essid} {icon}",
+        "format-wifi": "{essid} ({signalStrength}%) {icon}",
+        "format-icons": [
+            // "\ue4ca",
+            // "{signalStrength}"
+            "\uf1eb"
+        ],
         "format-ethernet": "{ipaddr}/{cidr} \uf6ff",
         "tooltip-format": "{ifname} via {gwaddr} \uf012",
         "format-linked": "{ifname} (No IP) \uf071",
