@@ -43,7 +43,7 @@
         }
     },
     "hyprland/language": {
-        "format": "\uf1ab {shortDescription}",
+        "format": "\uf11c {shortDescription}",
         "on-click": "hyprctl switchxkblayout at-translated-set-2-keyboard next"
     },
     "tray": {
