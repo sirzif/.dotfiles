@@ -8,7 +8,8 @@ window#waybar {
     background: rgba(0, 0, 0, 0);
 }
 
-.modules-left, .modules-right {
+.modules-left,
+.modules-right {
     margin-left: 0px;
     background-color: rgba(17, 17, 29, 1);
     border-bottom-right-radius: 10px;
@@ -27,7 +28,8 @@ window#waybar {
     border-bottom-left-radius: 10px;
 }
 
-#workspaces button:hover, #workspaces button.active {
+#workspaces button:hover,
+#workspaces button.active {
     background-color: rgba(252, 95, 114, 1);
     color: rgba(17, 17, 29, 1);
 }
@@ -81,14 +83,13 @@ window#waybar.empty #window {
 
 @keyframes blink {
     to {
-        background-color: #ffffff;
-        color: #000000;
+        /* background-color: #ffffff; */
+        color: rgba(252, 95, 114, 1);
     }
 }
 
-/* Using steps() instead of linear as a timing function to limit cpu usage */
 #battery.critical:not(.charging) {
-    background-color: #f53c3c;
+    /* background-color: #f53c3c; */
     color: #ffffff;
     animation-name: blink;
     animation-duration: 0.5s;
