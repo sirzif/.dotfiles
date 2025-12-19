@@ -2,13 +2,13 @@
 
 commit_msg="${1:-lil buhb forgor commit msg hehehehaw}"
 
-pushd env/nvim
-if ! git diff --quiet . || ! git diff --cached --quiet .; then
+if ! git diff --quiet env/nvim || ! git diff --cached --quiet env/nvim; then
+    pushd env/nvim
     git add .
     git commit -m "$commit_msg"
     git push
+    popd
 fi
-popd
 
 if ! git diff --quiet . || ! git diff --cached --quiet .; then
     git add .
