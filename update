@@ -1,20 +1,17 @@
 #!/usr/bin/env bash
 
-git diff --quiet env/nvim
-nvim_changed=$?
+commit_msg="${1:-lil buhb forgor commit msg hehehaw}"
 
-commit_msg="$1"
-
-if [ -z "$commit_msg" ]; then
-    commit_msg="lil buhb forgor commit msg hehehaw"
-fi
-
+pushd env/nvim
 if ! git diff --quiet . || ! git diff --cached --quiet .; then
     git add .
     git commit -m "$commit_msg"
     git push
 fi
+popd
 
-if [ $nvim_changed -eq 1 ]; then
-    git subtree push --prefix env/nvim git@github.com:martynasmuizys/nvim-rc.git main
+if ! git diff --quiet . || ! git diff --cached --quiet .; then
+    git add .
+    git commit -m "$commit_msg"
+    git push
 fi
