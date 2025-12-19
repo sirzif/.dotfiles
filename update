@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-nvim_changed=$(git diff -- quiet env/nvim)
+nvim_changed=$(git diff --quiet env/nvim)
 
 if ! git diff --quiet . || ! git diff --cached --quiet .; then
     git add .
