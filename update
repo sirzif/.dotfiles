@@ -9,6 +9,6 @@ if ! git diff --quiet . || ! git diff --cached --quiet .; then
     git push
 fi
 
-if ! [ $nvim_changed -eq 1]; then
-    git subtree push --prefix env/nvim git@github.com:martynasmuizys/nvim-rc.git main --squash
+if ! [ $nvim_changed -eq 1 ]; then
+    git subtree push --prefix env/nvim git@github.com:martynasmuizys/nvim-rc.git main
 fi
