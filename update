@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+
+if ! git diff --quiet . || ! git diff --cached --quiet .; then
+    git add .
+    git commit -m "$1"
+    git push
+fi
+
+if ! git diff --quiet env/nvim; then
+    git subtree push --prefix env/nvim git@github.com:martynasmuizys/nvim-rc.git main --squash
+fi
