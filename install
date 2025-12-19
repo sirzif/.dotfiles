@@ -1,15 +1,23 @@
 #!/usr/bin/env bash
 
-set -e
+PACKAGES=(hyprland sddm xdg-desktop-portal-hyprland)
 
-CONFIG="install.conf.yaml"
-DOTBOT_DIR="dotbot"
+install_packages() {
+    sudo pacman -S --needed --noconfirm base-devel
+    git clone https://aur.archlinux.org/yay-bin.git ~/yay
+    pushd ~/yay-bin
+    makepkg -si
+    popd
 
-DOTBOT_BIN="bin/dotbot"
-BASEDIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+    yay -S --needed --noconfirm "${WM_PACKAGES[@]}"
+}
 
-cd "${BASEDIR}"
-git -C "${DOTBOT_DIR}" submodule sync --quiet --recursive
-git submodule update --init --recursive "${DOTBOT_DIR}"
+link() {
+    echo "==> Linking .config files"
+    find $(pwd)/env -maxdepth 1 -type d -not -name 'env' -not -name '.*' -exec sh -c 'ln -sfn "$1" "$HOME/.config/$(basename "$1")"' _ {} \;
 
-"${BASEDIR}/${DOTBOT_DIR}/${DOTBOT_BIN}" -d "${BASEDIR}" -c "${CONFIG}" "${@}"
+    echo "==> Linking $HOME configuration files"
+    find $(pwd)/env -maxdepth 1 -name '.*' -exec sh -c 'ln -sfn "$1" "$HOME/$(basename "$1")"' _ {} ';'
+}
+
+link
