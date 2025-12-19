@@ -4,4 +4,4 @@ Package dependencies:
  - fzf
  - git
  - tmux
- - tmux-sessionizer (from theprimeagen; not really using it tho :/)
+ - tmux-sessionizer (from theprimeagen; not really used)
