@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
-nvim_changed=$(git diff --quiet env/nvim)
+git diff --quiet env/nvim
+nvim_changed=$?
 
 if ! git diff --quiet . || ! git diff --cached --quiet .; then
     git add .
@@ -8,6 +9,6 @@ if ! git diff --quiet . || ! git diff --cached --quiet .; then
     git push
 fi
 
-if ! $nvim_changed; then
+if ! [ $nvim_changed -eq 1]; then
     git subtree push --prefix env/nvim git@github.com:martynasmuizys/nvim-rc.git main --squash
 fi
