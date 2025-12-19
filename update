@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-commit_msg="${1:-lil buhb forgor commit msg hehehaw}"
+commit_msg="${1:-lil buhb forgor commit msg hehehehaw}"
 
 pushd env/nvim
 if ! git diff --quiet . || ! git diff --cached --quiet .; then
