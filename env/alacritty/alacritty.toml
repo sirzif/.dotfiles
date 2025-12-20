@@ -3,8 +3,8 @@ padding = { x = 5, y = 5 }
 opacity = 0.8
 
 [font]
-size = 14
-normal = {family = "Cascadia Code"}
+size = 16
+normal = {family = "JetBrainsMono Nerd Font"}
 
 [terminal.shell]
 program = "tmux"
