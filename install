@@ -2,6 +2,8 @@
 
 PACKAGES=(hyprland sddm xdg-desktop-portal-hyprland)
 
+DEV_PACKAGES=()
+
 install_packages() {
     sudo pacman -S --needed --noconfirm base-devel
     git clone https://aur.archlinux.org/yay-bin.git ~/yay
