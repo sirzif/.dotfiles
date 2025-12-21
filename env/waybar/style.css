@@ -1,21 +1,21 @@
 @import "./rose-pine-moon.css";
 * {
-    font-family: "Cascadia Code", "Font Awesome 7 Free", "Font Awesome 7 Brands";
+    font-family: "JetBrains Mono", "Font Awesome 7 Free", "Font Awesome 7 Brands";
     font-weight: bold;
     font-size: 14px;
 }
 
 window#waybar {
-    background: rgba(0, 0, 0, 0);
+    background: transparent;
 }
 
 .modules-left,
 .modules-right {
     margin-left: 0px;
-    background-color: rgba(17, 17, 29, 1);
+    background-color: #191724;
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
-    border: 1px solid rgba(252, 95, 114, 1);
+    border: 1px solid #fc5f72;
     border-top: none;
 }
 
@@ -23,7 +23,7 @@ window#waybar {
     padding: 1px 10px;
     margin: -1px;
     background: none;
-    color: rgba(252, 95, 114, 1);
+    color: #fc5f72;
     border-radius: 0;
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
@@ -31,9 +31,9 @@ window#waybar {
 
 #workspaces button:hover,
 #workspaces button.active {
-    background-color: rgba(252, 95, 114, 1);
-    border: 1px solid rgba(252, 95, 114, 1);
-    color: rgba(17, 17, 29, 1);
+    background-color: #fc5f72;
+    border: 1px solid #fc5f72;
+    color: #191724;
 }
 
 #clock,
@@ -57,7 +57,7 @@ window#waybar {
 #language,
 #mpd {
     margin: 1px 8px 1px 8px;
-    color: rgba(252, 95, 114, 1);
+    color: #fc5f72;
     background: none;
 }
 
@@ -79,20 +79,18 @@ window#waybar.empty #window {
 
 #battery.charging,
 #battery.plugged {
-    color: rgba(111, 194, 118, 1);
-    background-color: rgba(17, 17, 29, 1);
+    color: #00ffff;
+    background-color: #191724;
 }
 
 @keyframes blink {
     to {
-        /* background-color: #ffffff; */
-        color: rgba(252, 95, 114, 1);
+        color: #fc5f72;
     }
 }
 
 #battery.critical:not(.charging) {
-    /* background-color: #f53c3c; */
-    color: #ffffff;
+    color: #f6c177;
     animation-name: blink;
     animation-duration: 0.5s;
     animation-timing-function: steps(12);
