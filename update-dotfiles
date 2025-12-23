@@ -3,7 +3,7 @@
 commit_msg="${1:-lil buhb forgor commit msg hehehehaw}"
 
 if ! git diff --quiet env/nvim || ! git diff --cached --quiet env/nvim; then
-    pushd env/nvim
+    pushd env/.config/nvim
     git add .
     git commit -m "$commit_msg"
     git push
