@@ -16,7 +16,7 @@ install_packages() {
 
 link() {
     echo "==> Linking .config files"
-    find $(pwd)/env -maxdepth 1 -type d -not -name 'env' -not -name '.*' -exec sh -c 'ln -sfn "$1" "$HOME/.config/$(basename "$1")"' _ {} \;
+    find $(pwd)/env/.config -maxdepth 1 -type d -not -name '.config' -exec sh -c 'ln -sfn "$1" "$HOME/.config/$(basename "$1")"' _ {} \;
 
     echo "==> Linking $HOME configuration files"
     find $(pwd)/env -maxdepth 1 -name '.*' -exec sh -c 'ln -sfn "$1" "$HOME/$(basename "$1")"' _ {} ';'

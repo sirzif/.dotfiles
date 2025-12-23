@@ -83,6 +83,7 @@ zstyle :omz:plugins:ssh-agent helper keychain
 zstyle :omz:plugins:ssh-agent identities id_ed25519
 zstyle :omz:plugins:ssh-agent lazy yes
 zstyle :omz:plugins:ssh-agent quiet yes
+zstyle :omz:plugins:ssh-agent lifetime 3600
 
 source $ZSH/oh-my-zsh.sh
 
