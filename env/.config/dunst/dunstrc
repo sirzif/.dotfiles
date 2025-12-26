@@ -1,48 +1,53 @@
 [global]
-    width = 400
-    offset = (0,5)
+    width = 440
+    offset = (10,10)
 
-    progress_bar_min_width = 380
-    progress_bar_max_width = 380
+    progress_bar_min_width = 420
+    progress_bar_max_width = 420
     progress_bar_corner_radius = 2
 
-    padding = 10
-    horizontal_padding = 10
+    padding = 14
+    horizontal_padding = 14
     frame_width = 1
     gap_size = 3
-    font = "Inter 11"
+    font = "Inter 13"
 
-    icon_theme = "rose-pine-icons"
+    icon_theme = "oomox-rxze49"
+    icon_position = left
+    max_icon_size = 64
     enable_recursive_icon_lookup = true
-    corner_radius = 10
+    corner_radius = 12
 
-    background = "#191724"
-    foreground = "#e0def4"
+    timeout = 5
+
+    background = "#181818"
+    foreground = "#f8eaea"
 
 [urgency_low]
-    background = "#191724"
-    highlight = "#3e8fb0"
-    frame_color = "#3e8fb0"
+    background = "#181818"
+    highlight = "#b85a66"
+    frame_color = "#b85a66"
     default_icon = "dialog-information"
-    format = "<b><span foreground='#3e8fb0'>%s</span></b>\n%b"
+    format = "<b><span foreground='#b85a66'>%s</span></b>\n%b"
 
 [urgency_normal]
-    background = "#191724"
-    highlight = "#f6c117"
-    frame_color = "#f6c117"
+    background = "#181818"
+    highlight = "#ffb703"
+    frame_color = "#ffb703"
     default_icon = "dialog-warning"
-    format = "<b><span foreground='#f6c117'>%s</span></b>\n%b"
+    format = "<b><span foreground='#ffb703'>%s</span></b>\n%b"
 
 [urgency_critical]
-    background = "#191724"
+    background = "#181818"
     highlight = "#fc5f72"
     frame_color = "#fc5f72"
     default_icon = "dialog-error"
+    timeout = 0
     format = "<b><span foreground='#fc5f72'>%s</span></b>\n%b"
 
 [spotify]
     appname="Spotify"
-    background = "#191724"
+    background = "#181818"
     frame_color = "#00ff00"
     highlight = "#00ff00"
     format = "<b><span foreground='#00ff00'>%s</span></b>\n%b"

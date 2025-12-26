@@ -1,0 +1,24 @@
+#!/usr/bin/env bash
+
+playerctl --player=spotify --wait --follow metadata \
+    --format '{{status}}|{{artist}} — {{title}}|{{mpris:artUrl}}' |
+while IFS='|' read -r status song art; do
+    [ "$status" != "Playing" ] && continue
+    cache="$HOME/.cache/spotify"
+    mkdir -p "$cache"
+
+    case "$art" in
+        http*)
+            file="$cache/$(printf '%s' "$art" | sha1sum | cut -d' ' -f1).jpg"
+            [ -f "$file" ] || curl -sL "$art" -o "$file"
+            icon="$file"
+            ;;
+        file://*)
+            icon="${art#file://}"
+            ;;
+        *)
+            icon="spotify"
+            ;;
+    esac
+    notify-send -a Spotify -i "$icon" "Now Playing" "$song"
+done

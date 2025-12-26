@@ -1,7 +1,7 @@
 background = #181818
-foreground = #e0f2f1
+foreground = #f8eaea
 cursor-color = #524f67
-cursor-text = #e0f2f1
+cursor-text = #f8eaea
 
 palette = 0=#181818
 palette = 1=#fc5f72
@@ -10,7 +10,7 @@ palette = 3=#ffb703
 palette = 4=#b85a66
 palette = 5=#ff80ab
 palette = 6=#9aa0b8
-palette = 7=#e0f2f1
+palette = 7=#f8eaea
 palette = 8=#1a1b26
 palette = 9=#ff8a98
 palette = 10=#4dffe6

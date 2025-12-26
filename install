@@ -28,7 +28,7 @@ link() {
     find $(pwd)/env -maxdepth 1 -name '.*' -exec sh -c 'ln -sfn "$1" "$HOME/$(basename "$1")"' _ {} ';'
 
     echo "==> Linking scripts"
-    find $(pwd)/scripts -maxdepth 1 -exec sh -c 'ln -sfn "$1" "$HOME/.local/bin/$(basename "$1")"' _ {} ';'
+    find $(pwd)/scripts -maxdepth 1 -not -name 'scripts' -exec sh -c 'ln -sfn "$1" "$HOME/.local/bin/$(basename "$1")"' _ {} ';'
 }
 
 link
