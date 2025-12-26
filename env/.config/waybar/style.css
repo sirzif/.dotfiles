@@ -1,3 +1,5 @@
+@import "rxze49.css";
+
 * {
     font-family: "JetBrains Mono", "Font Awesome 7 Free", "Font Awesome 7 Brands";
     font-weight: bold;
@@ -11,10 +13,10 @@ window#waybar {
 .modules-left,
 .modules-right {
     margin-left: 0px;
-    background-color: #191724;
+    background-color: @black;
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
-    border: 1px solid #fc5f72;
+    border: 1px solid @red;
     border-top: none;
 }
 
@@ -22,7 +24,7 @@ window#waybar {
     padding: 1px 10px;
     margin: -1px;
     background: none;
-    color: #fc5f72;
+    color: @red;
     border-radius: 0;
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
@@ -30,9 +32,9 @@ window#waybar {
 
 #workspaces button:hover,
 #workspaces button.active {
-    background-color: #fc5f72;
-    border: 1px solid #fc5f72;
-    color: #191724;
+    background-color: @red;
+    border: 1px solid @red;
+    color: @black;
 }
 
 #clock,
@@ -56,7 +58,7 @@ window#waybar {
 #language,
 #mpd {
     margin: 1px 8px 1px 8px;
-    color: #fc5f72;
+    color: @red;
     background: none;
 }
 
@@ -78,18 +80,18 @@ window#waybar.empty #window {
 
 #battery.charging,
 #battery.plugged {
-    color: #00ffb0;
-    background-color: #191724;
+    color: @green;
+    background-color: @black;
 }
 
 @keyframes blink {
     to {
-        color: #fc5f72;
+        color: @red;
     }
 }
 
 #battery.critical:not(.charging) {
-    color: #f6c177;
+    color: @yellow;
     animation-name: blink;
     animation-duration: 0.5s;
     animation-timing-function: steps(12);

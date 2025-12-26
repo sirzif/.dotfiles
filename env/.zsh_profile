@@ -2,7 +2,8 @@ export XDG_CONFIG_HOME="$HOME/.config"
 
 alias vim="nvim"
 
-bindkey -s ^f "tmux-sessionizer\n"
+# later. need beter keybind perhaps. arrow keys meh
+# bindkey -s ^f "tmux-sessionizer\n"
 bindkey ^p up-line-or-beginning-search
 bindkey ^n down-line-or-beginning-search
 

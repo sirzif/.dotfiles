@@ -7,30 +7,26 @@ configuration {
 @import "default"
 
 * {
-	// bg: #191724;
-	bg: #26233A;
-	cur: #2a273f;
-	fgd: #e0def4;
-	cmt: #6e6a86;
-	cya: #9ccfd8;
-	grn: #3e8fb0;
-	ora: #ea9a97;
-	pur: #c4a7e7;
-	red: #eb6f92;
-	yel: #f6c177;
+	bg: #181818;
+	fgd: #f8eaea;
+    red: #fc5f72;
+    grn: #4dffe6;
+    yel: #ffd75a;
+	pur: #ffd1d7;
+    cya: #9aa0b8;
 
-	font: "Cascadia Code 14";
+	font: "JetBrainMono Nerd Font 16";
 
 	foreground: @fgd;
 	background: @bg;
-	active-background: @grn;
-	urgent-background: @red;
+	active-background: @red;
+	urgent-background: @yel;
 
 	selected-background: @active-background;
 	selected-urgent-background: @urgent-background;
 	selected-active-background: @active-background;
 	separatorcolor: @active-background;
-	bordercolor: @ora;
+	bordercolor: @red;
 }
 
 #window {
@@ -78,7 +74,7 @@ configuration {
 }
 #element.selected.normal {
 	background-color: @selected-background;
-	text-color:       @foreground;
+	text-color:       @background;
 }
 #element.selected.urgent {
 	background-color: @selected-urgent-background;
@@ -112,7 +108,7 @@ configuration {
 }
 #button.selected {
 	background-color: @selected-background;
-	text-color:       @foreground;
+	text-color:       @background;
 }
 #inputbar {
 	spacing:    0;
@@ -129,7 +125,7 @@ configuration {
 }
 #prompt {
 	spacing:    0;
-	text-color: @grn;
+	text-color: @red;
 }
 #inputbar {
 	children:   [ prompt,textbox-prompt-colon,entry,case-indicator ];
@@ -138,5 +134,5 @@ configuration {
 	expand:     false;
 	str:        ":";
 	margin:     0px 0.3em 0em 0em;
-	text-color: @grn;
+	text-color: @red;
 }

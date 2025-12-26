@@ -1,0 +1,32 @@
+initial-command = tmux new-session -A -s main
+confirm-close-surface = false
+shell-integration-features = no-cursor,no-sudo,no-title
+gtk-titlebar = false
+
+# WINDOW
+window-padding-x = 5
+window-padding-y = 5
+background-opacity = 0.8
+
+# FONT
+font-family = JetBrainsMono Nerd Font
+font-size = 16
+font-feature = -calt
+
+# COLORS
+config-file = ./colors
+
+# BINDS
+keybind = ctrl+shift+t=ignore
+keybind = alt+digit_1=ignore
+keybind = alt+digit_2=ignore
+keybind = alt+digit_3=ignore
+keybind = alt+digit_4=ignore
+keybind = alt+digit_5=ignore
+keybind = alt+digit_6=ignore
+keybind = alt+digit_7=ignore
+keybind = alt+digit_8=ignore
+keybind = alt+digit_9=ignore
+
+keybind = super+enter=unbind
+keybind = ctrl+enter=unbind
