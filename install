@@ -25,7 +25,7 @@ link() {
     ln -sfn $HOME/.dotfiles/env/.local/share/icons/oomox-rxze49/ $HOME/.local/share/icons
 
     echo "==> Linking $HOME configuration files"
-    find $(pwd)/env -maxdepth 1 -name '.*' -exec sh -c 'ln -sfn "$1" "$HOME/$(basename "$1")"' _ {} ';'
+    find $(pwd)/env -maxdepth 1 -type f -name '.*' -exec sh -c 'ln -sfn "$1" "$HOME/$(basename "$1")"' _ {} ';'
 
     echo "==> Linking scripts"
     find $(pwd)/scripts -maxdepth 1 -not -name 'scripts' -exec sh -c 'ln -sfn "$1" "$HOME/.local/bin/$(basename "$1")"' _ {} ';'

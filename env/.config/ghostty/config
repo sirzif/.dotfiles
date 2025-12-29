@@ -1,7 +1,8 @@
-initial-command = tmux new-session -A -s main
 confirm-close-surface = false
 shell-integration-features = no-cursor,no-sudo,no-title
 gtk-titlebar = false
+gtk-single-instance = true
+quit-after-last-window-closed = false
 
 # WINDOW
 window-padding-x = 5
