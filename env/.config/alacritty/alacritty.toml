@@ -6,9 +6,9 @@ opacity = 0.8
 size = 16
 normal = {family = "JetBrainsMono Nerd Font"}
 
-[terminal.shell]
-program = "tmux"
-args = ["new-session", "-A", "-s", "main"]
+# [terminal.shell]
+# program = "tmux"
+# args = ["new-session", "-A", "-s", "main"]
 
 [env]
 TERM="xterm-256color"

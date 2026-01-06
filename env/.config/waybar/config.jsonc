@@ -74,7 +74,7 @@
     },
     "memory": {
         "format": "{}% \uf538",
-        "on-click": "hyprctl dispatch exec '[float;size 70%]ghostty -e btop'"
+        "on-click": "hyprctl dispatch exec '[float;size 70x70]alacritty -e btop'"
     },
     "backlight": {
         // "device": "acpi_video1",
@@ -125,7 +125,7 @@
         "tooltip-format": "{ifname} via {gwaddr} \uf012",
         "format-linked": "{ifname} (No IP) \uf071",
         "format-disconnected": "Disconnected \uf071",
-        "on-click": "hyprctl dispatch exec '[float;size 70%]ghostty -e impala'"
+        // "on-click": "hyprctl dispatch exec '[float;size 70%]alacritty -e impala'"
     },
     "wireplumber": {
         // "scroll-step": 1, // %, can be a float

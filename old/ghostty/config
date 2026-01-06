@@ -1,7 +1,7 @@
 confirm-close-surface = false
 shell-integration-features = no-cursor,no-sudo,no-title
 gtk-titlebar = false
-gtk-single-instance = true
+gtk-single-instance = false
 quit-after-last-window-closed = false
 cursor-style-blink = false
 

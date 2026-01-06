@@ -1,21 +1,25 @@
 background = #181818
 foreground = #f8eaea
 cursor-color = #5e5a7a
-cursor-text = #f8eaea
+cursor-text = #d6d9e0
 
 palette = 0=#181818
 palette = 1=#fc5f72
 palette = 2=#00606d
+# palette = 2=#00a7a4
 palette = 3=#ffb703
 palette = 4=#00a7a4
+# palette = 4=#4b8fa1
 palette = 5=#ff80ab
 palette = 6=#9aa0b8
-palette = 7=#f8eaea
+palette = 7=#d6d9e0
 palette = 8=#222222
 palette = 9=#ff8a98
 palette = 10=#006475
+# palette = 10=#01c4bb
 palette = 11=#ffd75a
 palette = 12=#01c4bb
+# palette = 12=#6bb3c2
 palette = 13=#ffd1d7
 palette = 14=#b4b8d4
 palette = 15=#ffffff
