@@ -1,4 +1,4 @@
-![clean](./clean.png)
-![term](./term.png)
+![clean](./screenshots/clean.png)
+![term](./screenshots/term.png)
 
 bing bong
