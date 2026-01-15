@@ -7,13 +7,13 @@ configuration {
 @import "default"
 
 * {
-	bg: #181818;
-	fgd: #f8eaea;
+	bg: #201822;
+	fgd: #d6d9d0;
     red: #fc5f72;
-    grn: #4dffe6;
-    yel: #ffd75a;
-	pur: #ffd1d7;
-    cya: #9aa0b8;
+    grn: #00c9ad;
+    yel: #ffb703;
+	mgt: #ff80ab;
+    cyn: #767a90;
 
 	font: "JetBrainMono Nerd Font 16";
 
@@ -121,7 +121,7 @@ configuration {
 }
 #entry {
 	spacing:    0;
-	text-color: @cya;
+	text-color: @cyn;
 }
 #prompt {
 	spacing:    0;

@@ -74,7 +74,7 @@
     },
     "memory": {
         "format": "{}% \uf538",
-        "on-click": "hyprctl dispatch exec '[float;size 70x70]alacritty -e btop'"
+        "on-click": "hyprctl dispatch exec 'alacritty -e btop'"
     },
     "backlight": {
         // "device": "acpi_video1",

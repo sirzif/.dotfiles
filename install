@@ -19,10 +19,10 @@ link() {
     find $(pwd)/env/.config -maxdepth 1 -type d -not -name '.config' -exec sh -c 'ln -sfn "$1" "$HOME/.config/$(basename "$1")"' _ {} \;
 
     echo "==> Linking theme"
-    ln -sfn $HOME/.dotfiles/env/.local/share/themes/oomox-rxze49/ $HOME/.local/share/themes
+    ln -sfn $HOME/.dotfiles/env/.local/share/themes/oomox-tzfn/ $HOME/.local/share/themes
 
     echo "==> Linking icon theme"
-    ln -sfn $HOME/.dotfiles/env/.local/share/icons/oomox-rxze49/ $HOME/.local/share/icons
+    ln -sfn $HOME/.dotfiles/env/.local/share/icons/oomox-tzfn/ $HOME/.local/share/icons
 
     echo "==> Linking $HOME configuration files"
     find $(pwd)/env -maxdepth 1 -type f -name '.*' -exec sh -c 'ln -sfn "$1" "$HOME/$(basename "$1")"' _ {} ';'

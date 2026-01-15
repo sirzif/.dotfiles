@@ -20,25 +20,25 @@
 
     timeout = 5
 
-    background = "#181818"
-    foreground = "#f8eaea"
+    background = "#201822"
+    foreground = "#d6d9e0"
 
 [urgency_low]
-    background = "#181818"
-    highlight = "#b85a66"
-    frame_color = "#b85a66"
+    background = "#201822"
+    highlight = "#017d83"
+    frame_color = "#017d83"
     default_icon = "dialog-information"
-    format = "<b><span foreground='#b85a66'>%s</span></b>\n%b"
+    format = "<b><span foreground='#017d83'>%s</span></b>\n%b"
 
 [urgency_normal]
-    background = "#181818"
+    background = "#201822"
     highlight = "#ffb703"
     frame_color = "#ffb703"
     default_icon = "dialog-warning"
     format = "<b><span foreground='#ffb703'>%s</span></b>\n%b"
 
 [urgency_critical]
-    background = "#181818"
+    background = "#201822"
     highlight = "#fc5f72"
     frame_color = "#fc5f72"
     default_icon = "dialog-error"
@@ -47,7 +47,7 @@
 
 [spotify]
     appname="Spotify"
-    background = "#181818"
+    background = "#201822"
     frame_color = "#00ff00"
     highlight = "#00ff00"
     format = "<b><span foreground='#00ff00'>%s</span></b>\n%b"
