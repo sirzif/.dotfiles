@@ -1,11 +1,5 @@
 export XDG_CONFIG_HOME="$HOME/.config"
 
-alias vim="nvim"
-
-bindkey -s ^f "tmux-sessionizer\n"
-bindkey ^p up-line-or-beginning-search
-bindkey ^n down-line-or-beginning-search
-
 export GOPATH=$HOME/.local/go
 export EDITOR=nvim
 export GIt_EDITOR=nvim
