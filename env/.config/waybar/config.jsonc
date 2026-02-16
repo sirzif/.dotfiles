@@ -9,18 +9,14 @@
     "modules-left": [
         "hyprland/workspaces"
     ],
-    //"modules-center": [
-    //    //"clock"
-    //],
+    // "modules-center": [
+    //    "clock"
+    // ],
     "modules-right": [
-        "wireplumber",
-        "network",
-        "cpu",
-        "memory",
-        "backlight",
-        "hyprland/language",
-        "battery",
         "tray",
+        "hyprland/language",
+        "wireplumber",
+        "battery",
         "clock",
         "custom/power"
     ],
@@ -29,11 +25,11 @@
         "disable-scroll": true,
         "all-outputs": true,
         "warp-on-scroll": false,
-        "format": "{icon}",
+        "format": "{name}",
         "format-icons": {
             "1": "\uf120",
-            "2": "\ue007",
-            "3": "\uf392",
+            "2": "\uf269",
+            "3": "\uf1ff",
             "4": "\uf1bc",
             "5": "\uf075",
             "urgent": "\uf06a2",
@@ -73,7 +69,7 @@
         "tooltip": false
     },
     "memory": {
-        "format": "{}% \uf538",
+        "format": "{}% \uefc5",
         "on-click": "hyprctl dispatch exec 'alacritty -e btop'"
     },
     "backlight": {
@@ -99,7 +95,7 @@
         },
         "format": "{capacity}% {icon}",
         "format-full": "{capacity}% {icon}",
-        "format-charging": "{capacity}% \ue55b",
+        "format-charging": "{capacity}% \ueea1",
         "format-plugged": "{capacity}% \uf1e6",
         "format-alt": "{time} {icon}",
         //"format-good": "", // An empty format will hide the module
@@ -115,24 +111,25 @@
     "network": {
         // "interface": "wlp2*", // (Optional) To force the use of this interface
         // "format-wifi": "{essid} {icon}",
-        "format-wifi": "{essid} ({signalStrength}%) {icon}",
+        "tooltip": false,
+        "format-wifi": "\uf1eb",
         "format-icons": [
             // "\ue4ca",
             // "{signalStrength}"
             "\uf1eb"
         ],
-        "format-ethernet": "{ipaddr}/{cidr} \uf6ff",
-        "tooltip-format": "{ifname} via {gwaddr} \uf012",
-        "format-linked": "{ifname} (No IP) \uf071",
-        "format-disconnected": "Disconnected \uf071",
+        "format-ethernet": "{ifname} \uef09",
+        // "tooltip-format": "{ifname} via {gwaddr} \uf012",
+        "format-linked": "\uf0c1",
+        "format-disconnected": "\uf071",
         // "on-click": "hyprctl dispatch exec '[float;size 70%]alacritty -e impala'"
     },
     "wireplumber": {
         // "scroll-step": 1, // %, can be a float
         "format": "{volume}% {icon}",
-        "format-muted": "\uf6a9",
-        "format-source": "{volume}% \uf130",
-        "format-source-muted": "\uf131",
+        "format-muted": "\ueee8",
+        // "format-source": "{volume}% \uf130",
+        // "format-source-muted": "\ueee8",
         "format-icons": {
             "headphone": "\uf025",
             "hands-free": "\uf025",
