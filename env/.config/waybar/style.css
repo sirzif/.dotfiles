@@ -57,17 +57,35 @@ window#waybar {
 #window,
 #language,
 #mpd {
+    min-width: 30px;
     margin: 0px 8px;
     padding: 0px;
     color: @red;
     background: none;
 }
 
-#wireplumber {
+#tray {
     margin-left: 16px;
+    margin-right: 0px;
 }
+
+#language {
+    min-width: 44px;
+}
+
+#battery {
+    min-width: 54px;
+}
+
+#wireplumber.muted {
+    min-width: 20px;
+    margin: 0px;
+}
+
 #custom-power {
+    min-width: 20px;
     margin-right: 16px;
+    margin-left: 0px;
 }
 
 #battery.charging,
