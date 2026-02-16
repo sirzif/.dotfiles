@@ -233,7 +233,7 @@ stage {
   font-size: 1em; }
 
 .cinnamon-link {
-  color: #00a7a3;
+  color: #017d83;
   font-style: italic; }
   .cinnamon-link:hover {
     color: #201822; }
@@ -669,7 +669,7 @@ StScrollView StScrollBar {
     padding-right: 0.2em; }
 
 .window-list-item-demands-attention {
-  background-color: #01c4bb;
+  background-color: #00a7a3;
   color: #201822; }
 
 .window-list-preview {
@@ -709,7 +709,7 @@ StScrollView StScrollBar {
     background-color: #00f5d4; }
 
 .grouped-window-list-demands-attention {
-  background-color: #01c4bb;
+  background-color: #00a7a3;
   color: #201822; }
 
 .grouped-window-list-thumbnail-menu {
@@ -950,7 +950,7 @@ StScrollView StScrollBar {
   #notification StEntry:focus {
     border: 1px solid #d65466; }
   #notification .url-highlighter {
-    link-color: #00a7a3; }
+    link-color: #017d83; }
 
 .notification-with-image {
   min-height: 159px;
@@ -1241,7 +1241,7 @@ StScrollView StScrollBar {
   border-radius-topleft: 10px;
   border-radius-bottomleft: 10px;
   transition-duration: 150;
-  background-color: #01c4bb;
+  background-color: #00a7a3;
   border-top: 1px solid;
   border-left: 1px solid;
   border-bottom: 1px solid;

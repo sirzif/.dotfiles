@@ -9,7 +9,7 @@ precmd() {
              (( $(git rev-list --count @{u}..HEAD 2>/dev/null || echo 0) > 0 )); then
             _dir_status="%F{magenta} "
         else
-            _dir_status="%F{cyan} "
+            _dir_status="%F{#767a90} "
         fi
     else
         _dir_status=""
