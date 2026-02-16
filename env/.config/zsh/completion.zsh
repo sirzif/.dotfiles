@@ -30,8 +30,7 @@ zstyle ':completion:*' complete-options true
 zstyle ':completion:*' file-sort modification
 
 # Colors for files and directory
-# zstyle ':completion:*:*:*:*:default' list-colors ${(s.:.)LS_COLORS}
-zstyle ':completion:*:default' list-colors 'di=0;36:fi=0;37:ln=0;35:pi=0;33:so=0;32:bd=0;34:cd=0;34:ex=0;31'
+zstyle ':completion:*:*:*:*:default' list-colors ${(s.:.)LS_COLORS}
 
 # Only display some tags for the command cd
 zstyle ':completion:*:*:cd:*' tag-order local-directories directory-stack path-directories
