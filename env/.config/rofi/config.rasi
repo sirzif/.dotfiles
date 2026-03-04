@@ -9,11 +9,11 @@ configuration {
 * {
 	bg: #201822;
 	fgd: #d6d9d0;
-    red: #fc5f72;
-    grn: #00c9ad;
-    yel: #ffb703;
-	mgt: #ff80ab;
-    cyn: #767a90;
+    red: #f84a12;
+    grn: #689c77;
+    yel: #ffaf0a;
+	mgt: #a83279;
+    cyn: #1c95a8;
 
 	font: "JetBrainMono Nerd Font 16";
 

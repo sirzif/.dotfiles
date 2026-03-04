@@ -2,15 +2,14 @@
 {
     "layer": "top", // Waybar at top layer
     //"position": "bottom", // Waybar position (top|bottom|left|right)
-    "height": 30, // Waybar height (to be removed for auto height)
+    // "height": 30, // Waybar height (to be removed for auto height)
     //"width": 1280, // Waybar width
-    "spacing": 0, // Gaps between modules (4px)
+    "spacing": 4, // Gaps between modules (4px)
     // Choose the order of the modules
     "modules-left": [
         "hyprland/workspaces"
     ],
     // "modules-center": [
-    //    "clock"
     // ],
     "modules-right": [
         "tray",
@@ -34,7 +33,7 @@
             "5": "\uf075",
             "urgent": "\uf06a2",
             "focused": "\uf111",
-            //"active": "\uf192",
+            // "active": "\uf192",
             "default": "\uf111"
         }
     },
@@ -143,7 +142,7 @@
                 "\uf028"
             ]
         },
-        "on-click": "hyprctl dispatch exec '[float;size 50%]pavucontrol'"
+        "on-click": "hyprctl dispatch exec '[float]pavucontrol'"
     },
     "custom/power": {
         "format": "\uf011",

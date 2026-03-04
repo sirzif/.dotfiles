@@ -18,4 +18,4 @@ precmd() {
 }
 zstyle ':vcs_info:git:*' formats ' %F{blue}%b'
 
-PROMPT='%{$fg[cyan]%}%~%{$fg_bold[blue]%}%{$fg_bold[blue]%}${vcs_info_msg_0_}${_dir_status}%{$reset_color%}%(?..%F{red} ) %{$reset_color%}%(!.#.%%) '
+PROMPT='%{$fg[cyan]%}%~%{$fg_bold[blue]%}%{$fg_bold[blue]%}${vcs_info_msg_0_}${_dir_status} %{$reset_color%}%(!.#.%%) '

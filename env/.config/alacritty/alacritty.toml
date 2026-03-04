@@ -6,12 +6,8 @@ opacity = 0.8
 size = 14
 normal = {family = "JetBrainsMono Nerd Font"}
 
-# [terminal.shell]
-# program = "tmux"
-# args = ["new-session", "-A", "-s", "main"]
-
-# Colors section of "Alacritty - TOML configuration file format"
-# https://github.com/alacritty/alacritty/blob/master/extra/man/alacritty.5.scd#colors
+[mouse]
+hide_when_typing = true
 
 [general]
 import = ["tzfn.toml"]

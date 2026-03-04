@@ -207,7 +207,8 @@ cleanup_dead_panes() {
     mv "$temp_file" "$PANE_CACHE_FILE" 2>/dev/null || touch "$PANE_CACHE_FILE"
 }
 
-sanity_check
+# i mean yeah should be perhaps seperate command or something
+# sanity_check
 
 # if TS_SEARCH_PATHS is not set use default
 [[ -n "$TS_SEARCH_PATHS" ]] || TS_SEARCH_PATHS=(~/ ~/personal ~/personal/dev)
