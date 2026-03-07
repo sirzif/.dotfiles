@@ -7,10 +7,11 @@
     "spacing": 4, // Gaps between modules (4px)
     // Choose the order of the modules
     "modules-left": [
+        "hyprland/window"
+    ],
+    "modules-center": [
         "hyprland/workspaces"
     ],
-    // "modules-center": [
-    // ],
     "modules-right": [
         "tray",
         "hyprland/language",
@@ -20,21 +21,24 @@
         "custom/power"
     ],
     // Modules configuration
+    "hyprland/window": {
+        "max-length": 80
+    },
     "hyprland/workspaces": {
         "disable-scroll": true,
         "all-outputs": true,
         "warp-on-scroll": false,
-        "format": "{name}",
+        "format": "{icon}",
         "format-icons": {
-            "1": "\uf120",
-            "2": "\uf269",
-            "3": "\uf1ff",
-            "4": "\uf1bc",
-            "5": "\uf075",
+            // "1": "\uf120",
+            // "2": "\uf269",
+            // "3": "\uf1ff",
+            // "4": "\uf1bc",
+            // "5": "\uf075",
             "urgent": "\uf06a2",
             "focused": "\uf111",
-            // "active": "\uf192",
-            "default": "\uf111"
+            "active": "\uf111",
+            "default": "\uf10c"
         }
     },
     "hyprland/language": {
@@ -96,7 +100,7 @@
         "format-full": "{capacity}% {icon}",
         "format-charging": "{capacity}% \ueea1",
         "format-plugged": "{capacity}% \uf1e6",
-        "format-alt": "{time} {icon}",
+        // "format-alt": "{time} {icon}",
         //"format-good": "", // An empty format will hide the module
         //"format-full": "",
         "format-icons": [

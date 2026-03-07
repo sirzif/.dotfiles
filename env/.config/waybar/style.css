@@ -2,40 +2,31 @@
 
 * {
     font-family: "JetBrainsMono Nerd Font";
-    font-weight: bold;
     font-size: 14px;
+    font-weight: bold;
 }
 
 window#waybar {
-    background: transparent;
+    background-color: rgba(23 ,25 ,26, 0.5);
+    border-radius: 0px 0px 5px 5px;
+    border: 1px solid @black;
 }
 
 .modules-left,
+.modules-center,
 .modules-right {
-    margin-left: 0px;
-    background-color: @black;
-    border-bottom-right-radius: 5px;
-    border-bottom-left-radius: 5px;
-    border: 1px solid @red;
-    border-top: none;
+    margin: 3px;
 }
 
 #workspaces button {
-    min-width: 30px;
     padding: 0px;
-    background: none;
-    color: @red;
-    border-radius: 0px;
-
-    border-bottom-right-radius: 5px;
-    border-bottom-left-radius: 5px;
+    padding-right: 5px;
+    color: @cyan;
+    border: none;
 }
 
-#workspaces button:hover,
-#workspaces button.active {
-    background-color: @red;
-    border: 1px solid @red;
-    color: @black;
+#workspaces button:hover {
+    background-color: @hl;
 }
 
 #clock,
@@ -59,8 +50,7 @@ window#waybar {
 #language,
 #mpd {
     padding: 0px 8px;
-    color: @red;
-    background: none;
+    color: @cyan;
 }
 
 #tray {
@@ -76,12 +66,12 @@ window#waybar {
 #battery.charging,
 #battery.plugged {
     color: @green;
-    background-color: @black;
+    /* background-color: @black; */
 }
 
 @keyframes blink {
     to {
-        color: @red;
+        color: @cyan;
     }
 }
 
@@ -100,5 +90,4 @@ window#waybar {
 
 #tray>.needs-attention {
     -gtk-icon-effect: highlight;
-    background-color: @yellow;
 }

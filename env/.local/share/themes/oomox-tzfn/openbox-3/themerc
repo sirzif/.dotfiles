@@ -20,7 +20,7 @@ menu.items.text.color: #d6d9e0
 menu.items.disabled.text.color: #a8abb1
 
 menu.items.active.bg: Solid Flat
-menu.items.active.bg.color: #f84a12
+menu.items.active.bg.color: #1da89d
 menu.items.active.text.color: #d6d9e0
 
 menu.separator.color: #a8abb1
@@ -32,7 +32,7 @@ menu.separator.padding.height: 4
 window.active.title.separator.color: #202426
 
 # Active window
-window.active.border.color: #f84a12
+window.active.border.color: #1da89d
 
 
 window.active.title.bg: flat solid
@@ -54,7 +54,7 @@ window.active.button.unpressed.bg.color: #202426
 window.active.button.unpressed.image.color: #d6d9e0
 
 window.active.button.pressed.bg: flat solid
-window.active.button.pressed.bg.color: #f84a12
+window.active.button.pressed.bg.color: #1da89d
 window.active.button.pressed.image.color: #17191a
 
 window.active.button.disabled.bg: flat solid
@@ -63,9 +63,9 @@ window.active.button.disabled.image.color: #a8abb1
 
 window.active.button.hover.bg: flat solid
 window.active.button.hover.bg.color: #202426
-window.active.button.hover.image.color: #f84a12
+window.active.button.hover.image.color: #1da89d
 
-#window.active.button.toggled.bg: #f84a12
+#window.active.button.toggled.bg: #1da89d
 #window.active.button.toggled.image.color: #17191a
 
 # Inactive window
@@ -90,7 +90,7 @@ window.inactive.button.unpressed.bg.color: #202426
 window.inactive.button.unpressed.image.color: #a8abb1
 
 window.inactive.button.pressed.bg: flat solid
-window.inactive.button.pressed.bg.color: #f84a12
+window.inactive.button.pressed.bg.color: #1da89d
 window.inactive.button.pressed.image.color: #17191a
 
 window.inactive.button.disabled.bg: flat solid
@@ -99,12 +99,12 @@ window.inactive.button.disabled.image.color: #202426
 
 window.inactive.button.hover.bg: flat solid
 window.inactive.button.hover.bg.color: #202426
-window.inactive.button.hover.image.color: #f84a12
+window.inactive.button.hover.image.color: #1da89d
 
 
 # OSD
 osd.border.width: 1
-osd.border.color: #f84a12
+osd.border.color: #1da89d
 
 osd.bg: flat solid
 osd.bg.color: #202426
@@ -119,7 +119,7 @@ osd.bg.shadow: 0
 
 osd.border.width: 2
 osd.hilight.bg: Solid Flat
-osd.hilight.bg.color: #f84a12
+osd.hilight.bg.color: #1da89d
 osd.unhilight.bg: flat solid
 osd.unhilight.bg.color: #17191a
 
@@ -128,14 +128,14 @@ osd.button.unpressed.bg.color: #17191a
 #osd.button.unpressed.*.border.color: #d6d9e0
 
 osd.button.pressed.bg: flat border
-osd.button.pressed.bg.color: #f84a12
+osd.button.pressed.bg.color: #1da89d
 #osd.button.pressed.*.border.color: #17191a
 
 osd.button.focused.bg: flat solid border
 osd.button.focused.bg.color: #d6d9e0
 #osd.button.focused.*.border.color: #17191a
 
-osd.button.focused.box.color: #f84a12
+osd.button.focused.box.color: #1da89d
 
 
 # Fonts
