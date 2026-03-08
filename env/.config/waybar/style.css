@@ -1,93 +1,102 @@
-@import "tzfn.css";
+@import "colors.css";
 
 * {
     font-family: "JetBrainsMono Nerd Font";
+    border: none;
+	border-radius: 0;
+	min-height: 0;
+	margin: 0;
+	padding: 0;
+	text-shadow: none;
+}
+
+#waybar {
+    background-color: transparent;
     font-size: 14px;
     font-weight: bold;
+    color: @cyan;
 }
 
-window#waybar {
-    background-color: rgba(23 ,25 ,26, 0.5);
-    border-radius: 0px 0px 5px 5px;
-    border: 1px solid @black;
-}
-
-.modules-left,
-.modules-center,
-.modules-right {
-    margin: 3px;
+/* ---- */
+/* LEFT */
+/* ---- */
+#left {
+    background-color: rgba(23, 25, 26, 0.8);
+    border: 1px solid rgba(23, 25, 26, 0.2);
+    padding: 5px 8px;
+    border-radius: 20px;
 }
 
 #workspaces button {
-    padding: 0px;
-    padding-right: 5px;
     color: @cyan;
-    border: none;
+    background: transparent;
 }
 
-#workspaces button:hover {
-    background-color: @hl;
+#window {
+    padding: 0px 6px;
 }
 
-#clock,
-#battery,
-#cpu,
-#memory,
-#disk,
-#temperature,
-#backlight,
-#network,
-#pulseaudio,
-#wireplumber,
-#custom-media,
+window#waybar.empty #window {
+    padding: 0px 2px;
+}
+
+/* ------ */
+/* CENTER */
+/* ------ */
+#center {
+    background-color: rgba(23, 25, 26, 0.8);
+    border: 1px solid rgba(23, 25, 26, 0.2);
+    padding: 5px 8px;
+    border-radius: 20px;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+#center:hover {
+    background-color: @cyan;
+    color: @black;
+}
+
+/* ----- */
+/* RIGHT */
+/* ----- */
 #tray,
-#mode,
-#idle_inhibitor,
-#scratchpad,
-#power-profiles-daemon,
-#custom-power,
-#window,
-#language,
-#mpd {
-    padding: 0px 8px;
-    color: @cyan;
+#right {
+    background-color: rgba(23, 25, 26, 0.8);
+    border: 1px solid rgba(23, 25, 26, 0.2);
+    padding: 5px 8px;
+    border-radius: 20px;
+    margin-right: 5px;
 }
 
-#tray {
-    padding: 0px;
-    padding-left: 16px;
+#tray menu {
+    /* padding: 8px; */
+    /* margin: 8px; */
 }
 
+#battery,
+#wireplumber {
+    border-radius: 20px;
+    padding-right: 14px;
+    padding-left: 7px;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+#battery:hover,
+#wireplumber:hover {
+    color: @black;
+    background-color: @cyan;
+
+
+}
 #custom-power {
-    padding: 0px;
-    padding-right: 16px;
+    padding-left: 10px;
+    padding-right: 14px;
+    background-color: rgba(23, 25, 26, 0.8);
+    border-radius: 25px;
+    transition: background-color 0.2s ease, color 0.2s ease;
 }
 
-#battery.charging,
-#battery.plugged {
-    color: @green;
-    /* background-color: @black; */
-}
-
-@keyframes blink {
-    to {
-        color: @cyan;
-    }
-}
-
-#battery.critical:not(.charging) {
-    color: @yellow;
-    animation-name: blink;
-    animation-duration: 0.5s;
-    animation-timing-function: steps(12);
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-}
-
-#tray>.passive {
-    -gtk-icon-effect: dim;
-}
-
-#tray>.needs-attention {
-    -gtk-icon-effect: highlight;
+#custom-power:hover {
+    background-color: @cyan;
+    color: @black;
 }

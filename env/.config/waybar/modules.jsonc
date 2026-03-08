@@ -1,0 +1,112 @@
+{
+    "hyprland/window": {
+        "max-length": 80,
+        "format-empty": "alo"
+    },
+    "hyprland/workspaces": {
+        "disable-scroll": true,
+        "all-outputs": true,
+        "warp-on-scroll": false,
+        "format": "{icon}",
+        "format-icons": {
+            // "1": "\uf120",
+            // "2": "\uf269",
+            // "3": "\uf1ff",
+            // "4": "\uf1bc",
+            // "5": "\uf075",
+            "urgent": "\uf06a2",
+            "focused": "\uf111",
+            "active": "\uf111",
+            "default": "\uf10c"
+        }
+    },
+    "tray": {
+        "icon-size": 20,
+        "show-passive-items": true,
+        "spacing": 0
+    },
+    "clock": {
+        "timezone": "Europe/Vilnius",
+        "tooltip-format": "<big>{:%Y %B %d}</big>\n<tt><small>{calendar}</small></tt>",
+        "calendar": {
+            "mode": "month",
+            "mode-mon-col": 3,
+            "on-scroll": 1,
+            "on-click-right": "mode",
+            "format": {
+                "months": "<span color='#ffffff'><b>{}</b></span>",
+                "days": "<span color='#ffffff'><b>{}</b></span>",
+                "weekdays": "<span color='#fc5f72'><b>{}</b></span>",
+                "today": "<span color='#fc5f72'><b><u>{}</u></b></span>"
+            }
+        },
+        "format-alt": "{:%Y-%m-%d}"
+    },
+    "custom/notifications": {
+        "tooltip": true,
+        "format": "<span size='12pt'>{icon}</span>",
+        "format-icons": {
+            "notification": "󱅫",
+            "none": "󰂜",
+            "dnd-notification": "󰂠",
+            "dnd-none": "󰪓",
+            "inhibited-notification": "󰂛",
+            "inhibited-none": "󰪑",
+            "dnd-inhibited-notification": "󰂛",
+            "dnd-inhibited-none": "󰪑"
+        },
+        "return-type": "json",
+        "exec-if": "which swaync-client",
+        "exec": "swaync-client -swb",
+        "on-click": "swaync-client -t -sw",
+        "on-click-right": "swaync-client -d -sw",
+        "escape": true
+    },
+    "battery": {
+        "states": {
+            // "good": 65,
+            "warning": 30,
+            "critical": 15
+        },
+        "format": "{capacity}% {icon}",
+        "format-full": "{capacity}% {icon}",
+        "format-charging": "{capacity}% \ueea1",
+        "format-plugged": "{capacity}% \uf1e6",
+        // "format-alt": "{time} {icon}",
+        //"format-good": "", // An empty format will hide the module
+        //"format-full": "",
+        "format-icons": [
+            "\uf244",
+            "\uf243",
+            "\uf242",
+            "\uf241",
+            "\uf240"
+        ]
+    },
+    "wireplumber": {
+        // "scroll-step": 1, // %, can be a float
+        "format": "{volume}% {icon}",
+        "format-muted": "\ueee8",
+        // "format-source": "{volume}% \uf130",
+        // "format-source-muted": "\ueee8",
+        "format-icons": {
+            "headphone": "\uf025",
+            "hands-free": "\uf025",
+            "headset": "\uf590",
+            "phone": "\uf095",
+            "portable": "\uf095",
+            "car": "\uf1b9",
+            "default": [
+                "\uf026",
+                "\uf027",
+                "\uf028"
+            ]
+        },
+        "on-click": "hyprctl dispatch exec '[float]pavucontrol'"
+    },
+    "custom/power": {
+        "format": "\uf011",
+        "tooltip": false,
+        "on-click": "wlogout"
+    }
+}

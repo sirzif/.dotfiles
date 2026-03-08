@@ -1,156 +1,42 @@
-// -*- mode: jsonc -*-
 {
-    "layer": "top", // Waybar at top layer
-    //"position": "bottom", // Waybar position (top|bottom|left|right)
-    // "height": 30, // Waybar height (to be removed for auto height)
-    //"width": 1280, // Waybar width
-    "spacing": 4, // Gaps between modules (4px)
-    // Choose the order of the modules
+    "layer": "top",
+    "position": "top",
+    "width": 1910,
+    "height": 25,
+    "margin": "5 0 0 0",
+
+    "group/left": {
+		"orientation": "horizontal",
+		"modules": [
+			"hyprland/workspaces",
+            "hyprland/window"
+		]
+	},
+    "group/center": {
+		"orientation": "horizontal",
+		"modules": [
+            "clock"
+		]
+	},
+    "group/right": {
+		"orientation": "horizontal",
+        "modules": [
+            "wireplumber",
+            "battery",
+        ]
+    },
+
     "modules-left": [
-        "hyprland/window"
+        "group/left"
     ],
     "modules-center": [
-        "hyprland/workspaces"
+        "group/center"
     ],
     "modules-right": [
         "tray",
-        "hyprland/language",
-        "wireplumber",
-        "battery",
-        "clock",
+        "group/right",
         "custom/power"
     ],
-    // Modules configuration
-    "hyprland/window": {
-        "max-length": 80
-    },
-    "hyprland/workspaces": {
-        "disable-scroll": true,
-        "all-outputs": true,
-        "warp-on-scroll": false,
-        "format": "{icon}",
-        "format-icons": {
-            // "1": "\uf120",
-            // "2": "\uf269",
-            // "3": "\uf1ff",
-            // "4": "\uf1bc",
-            // "5": "\uf075",
-            "urgent": "\uf06a2",
-            "focused": "\uf111",
-            "active": "\uf111",
-            "default": "\uf10c"
-        }
-    },
-    "hyprland/language": {
-        "format": "{shortDescription} \uf11c",
-        "on-click": "hyprctl switchxkblayout at-translated-set-2-keyboard next"
-    },
-    "tray": {
-        // "icon-size": 16,
-        "show-passive-items": true,
-        "spacing": 8
-    },
-    "clock": {
-        "timezone": "Europe/Vilnius",
-        "tooltip-format": "<big>{:%Y %B %d}</big>\n<tt><small>{calendar}</small></tt>",
-        "calendar": {
-            "mode": "month",
-            "mode-mon-col": 3,
-            "on-scroll": 1,
-            "on-click-right": "mode",
-            "format": {
-                "months": "<span color='#ffffff'><b>{}</b></span>",
-                "days": "<span color='#ffffff'><b>{}</b></span>",
-                "weekdays": "<span color='#fc5f72'><b>{}</b></span>",
-                "today": "<span color='#fc5f72'><b><u>{}</u></b></span>"
-            }
-        },
-        "format-alt": "{:%Y-%m-%d}"
-    },
-    "cpu": {
-        "format": "{usage}% \uf2db",
-        "tooltip": false
-    },
-    "memory": {
-        "format": "{}% \uefc5",
-        "on-click": "hyprctl dispatch exec 'alacritty -e btop'"
-    },
-    "backlight": {
-        // "device": "acpi_video1",
-        "format": "{percent}% {icon}",
-        "format-icons": [
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            ""
-        ]
-    },
-    "battery": {
-        "states": {
-            // "good": 65,
-            "warning": 30,
-            "critical": 15
-        },
-        "format": "{capacity}% {icon}",
-        "format-full": "{capacity}% {icon}",
-        "format-charging": "{capacity}% \ueea1",
-        "format-plugged": "{capacity}% \uf1e6",
-        // "format-alt": "{time} {icon}",
-        //"format-good": "", // An empty format will hide the module
-        //"format-full": "",
-        "format-icons": [
-            "\uf244",
-            "\uf243",
-            "\uf242",
-            "\uf241",
-            "\uf240"
-        ]
-    },
-    "network": {
-        // "interface": "wlp2*", // (Optional) To force the use of this interface
-        // "format-wifi": "{essid} {icon}",
-        "tooltip": false,
-        "format-wifi": "\uf1eb",
-        "format-icons": [
-            // "\ue4ca",
-            // "{signalStrength}"
-            "\uf1eb"
-        ],
-        "format-ethernet": "{ifname} \uef09",
-        // "tooltip-format": "{ifname} via {gwaddr} \uf012",
-        "format-linked": "\uf0c1",
-        "format-disconnected": "\uf071",
-        // "on-click": "hyprctl dispatch exec '[float;size 70%]alacritty -e impala'"
-    },
-    "wireplumber": {
-        // "scroll-step": 1, // %, can be a float
-        "format": "{volume}% {icon}",
-        "format-muted": "\ueee8",
-        // "format-source": "{volume}% \uf130",
-        // "format-source-muted": "\ueee8",
-        "format-icons": {
-            "headphone": "\uf025",
-            "hands-free": "\uf025",
-            "headset": "\uf590",
-            "phone": "\uf095",
-            "portable": "\uf095",
-            "car": "\uf1b9",
-            "default": [
-                "\uf026",
-                "\uf027",
-                "\uf028"
-            ]
-        },
-        "on-click": "hyprctl dispatch exec '[float]pavucontrol'"
-    },
-    "custom/power": {
-        "format": "\uf011",
-        "tooltip": false,
-        "on-click": "wlogout"
-    }
+    "include": [ "~/.config/waybar/modules.jsonc" ]
+
 }
