@@ -2,5 +2,3 @@
 ![term](./screenshots/term.png)
 
 bing bong
-
-test
