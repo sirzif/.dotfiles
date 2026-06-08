@@ -1,0 +1,58 @@
+{
+    "layer": "top",
+    "position": "top",
+    "width": 1910,
+    "height": 25,
+    "margin": "5 0 0 0",
+
+    "group/left": {
+		"orientation": "horizontal",
+		"modules": [
+			"sway/workspaces",
+            "mpris"
+		]
+	},
+    "group/center": {
+		"orientation": "horizontal",
+		"modules": [
+            "sway/window"
+		]
+	},
+    "group/right": {
+		"orientation": "horizontal",
+        "modules": [
+            "tray",
+            "network",
+            "bluetooth"
+        ]
+    },
+    "group/hardware": {
+		"orientation": "horizontal",
+        "modules": [
+            "cpu",
+            "memory",
+            "battery"
+        ]
+    },
+    "group/menu": {
+		"orientation": "horizontal",
+        "modules": [
+            "clock",
+            "custom/notifications"
+        ]
+    },
+
+    "modules-left": [
+        "group/left"
+    ],
+    "modules-center": [
+        "group/center"
+    ],
+    "modules-right": [
+        "group/right",
+        "group/hardware",
+        "group/menu"
+    ],
+    "include": [ "~/.config/waybar/modules.jsonc" ]
+
+}

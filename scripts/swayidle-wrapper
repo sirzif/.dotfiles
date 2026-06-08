@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+
+wallpaper="$HOME/.dotfiles/images/wallpaper.png"
+lock="swaylock -f -i $wallpaper --datestr '%d %m %Y'"
+
+swayidle -w \
+    timeout 30 'brightnessctl -s set 10' \
+        resume 'brightnessctl -r' \
+    timeout 600 "{ brightnessctl -r; $lock; }" \
+    timeout 630 'niri msg action power-off-monitors' \
+        resume 'niri msg action power-on-monitors' \
+    timeout 1800 'systemctl suspend' \
+    before-sleep "$lock"
