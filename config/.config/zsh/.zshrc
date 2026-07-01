@@ -14,23 +14,17 @@ setopt HIST_IGNORE_SPACE
 setopt HIST_SAVE_NO_DUPS
 setopt HIST_VERIFY
 
-zstyle :compinstall filename '/home/martis/.zshrc'
-
-# Load completions
-source "$ZDOTDIR/completion.zsh"
-
-# Load prompt
-source "$ZDOTDIR/prompt.zsh"
-
-# Loading stuff
 autoload -U colors && colors
+autoload -Uz vcs_info
+precmd() { vcs_info }
 
-# Aliases
+zstyle ':vcs_info:git:*' formats '(%b) '
+zstyle :compinstall filename "$ZDOTDIR/.zshrc"
+
+PROMPT='%F{cyan}%2~ %F{yellow}${vcs_info_msg_0_}%{$reset_color%}%(!.#.%%) '
+
+source "$ZDOTDIR/completion.zsh"
 source "$ZDOTDIR/alias.zsh"
-
-# Keybinds
 source "$ZDOTDIR/binds.zsh"
 
-# Load plugins
-source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source <(fzf --zsh)
