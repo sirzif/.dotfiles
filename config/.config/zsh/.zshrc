@@ -15,13 +15,10 @@ setopt HIST_SAVE_NO_DUPS
 setopt HIST_VERIFY
 
 autoload -U colors && colors
-autoload -Uz vcs_info
-precmd() { vcs_info }
 
-zstyle ':vcs_info:git:*' formats '(%b) '
 zstyle :compinstall filename "$ZDOTDIR/.zshrc"
 
-PROMPT='%F{cyan}%2~ %F{yellow}${vcs_info_msg_0_}%{$reset_color%}%(!.#.%%) '
+PROMPT='%F{cyan}%2~ %{$reset_color%}%(!.#.%%) '
 
 source "$ZDOTDIR/completion.zsh"
 source "$ZDOTDIR/alias.zsh"
